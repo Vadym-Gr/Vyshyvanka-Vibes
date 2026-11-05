@@ -1,19 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta
+      name="description"
+      content="Vyshyvanka Vibes — traditional Ukrainian artistry in every stitch. Discover authentic embroidery and Ukrainian craftsmanship."
+    />
+    <meta name="theme-color" content="#1c2225" />
+    <title>Vyshyvanka Vibes — Ukrainian Embroidery</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <load src="./partials/header.html" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+    <main id="main-content" tabindex="-1">
+      <load src="./partials/hero.html" />
+      <load src="./partials/about-us.html" />
+      <load src="./partials/collection.html" />
+      <load src="./partials/order.html" />
+      <load src="./partials/testimonials.html" />
     </main>
 
     <load src="./partials/footer.html" />

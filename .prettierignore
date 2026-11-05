@@ -1,0 +1,9 @@
+node_modules/
+dist/
+assets/
+package-lock.json
+src/img/
+src/public/
+README.pl.md
+README.ro.md
+README.tr.md

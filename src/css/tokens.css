@@ -1,0 +1,43 @@
+:root {
+  color-scheme: dark;
+
+  --font-family: 'Manrope Variable', 'Manrope', sans-serif;
+  --color-background: #1c2225;
+  --color-text: #fcf9f9;
+  --color-accent: #ecd979;
+  --color-text-muted: rgb(252 249 249 / 40%);
+  --color-border: rgb(252 249 249 / 10%);
+  --color-border-strong: rgb(252 249 249 / 30%);
+
+  --radius-small: 4px;
+  --radius-medium: 15px;
+  --transition-duration: 250ms;
+  --transition-easing: ease;
+
+  --container-width: 375px;
+  --container-gutter: 20px;
+  --section-padding: 40px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-width: 768px;
+    --container-gutter: 32px;
+    --section-padding: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --container-width: 1280px;
+    --container-gutter: 50px;
+    --section-padding: 75px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --container-width: 1440px;
+    --container-gutter: 100px;
+  }
+}
