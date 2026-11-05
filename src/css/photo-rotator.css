@@ -40,6 +40,12 @@
   border-radius: var(--radius-small);
   color: var(--color-text);
   background-color: transparent;
+  transition: color 800ms ease-in-out;
+}
+
+.photo-rotator:has(.is-active[data-controls-tone='dark'])
+  .photo-rotator__toggle {
+  color: var(--color-background);
 }
 
 .photo-rotator__icon {
@@ -100,6 +106,10 @@
   }
 
   .photo-rotator__icon {
+    transition: none;
+  }
+
+  .photo-rotator__toggle {
     transition: none;
   }
 }

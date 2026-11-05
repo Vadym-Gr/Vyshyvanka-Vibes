@@ -1,5 +1,124 @@
-<section class="section" id="about-us" aria-labelledby="about-us-title">
-  <div class="container">
-    <h2 class="section-title" id="about-us-title">About Us</h2>
+<section
+  class="section about-us"
+  id="about-us"
+  aria-labelledby="about-us-title"
+>
+  <div class="container about-us__inner">
+    <div class="about-us__content">
+      <h2 class="section-title" id="about-us-title">About Us</h2>
+      <div class="about-us__text">
+        <p>
+          The store "Vyshyvanka Vibes" is a place where traditional Ukrainian
+          vyshyvanka comes to life with new zest and style. Our store offers a
+          wide selection of high-quality and authentic embroidery, which
+          combines the elegance of traditional needlework and modern design.
+        </p>
+        <p>
+          In "Vyshyvanka Vibes" you will find various models of embroidery, from
+          classic to modern, corresponding to the latest fashion trends. Our
+          embroidery is made using natural fabrics and is embroidered by highly
+          qualified craftsmen who convey the beauty of Ukrainian culture in
+          every detail.We believe that vyshyvanka is not just clothing, but a
+          symbol of national pride, the heritage of our ancestors and a way of
+          expressing one's individuality. Each embroidery from "Vyshyvanka
+          Vibes" has its own unique history and symbolism, which gives it a
+          special meaning.
+        </p>
+      </div>
+    </div>
+    <div class="about-us__visual">
+      <div class="about-us__photo photo-rotator" data-photo-rotator>
+        <picture class="photo-rotator__slide is-active" data-photo-slide>
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ./img/about/right-wide.webp    1x,
+              ./img/about/right-wide@2x.webp 2x
+            "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/about/right-desktop.webp    1x,
+              ./img/about/right-desktop@2x.webp 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/about/right-tablet.webp    1x,
+              ./img/about/right-tablet@2x.webp 2x
+            "
+          />
+          <img
+            src="./img/about/right-mobile.webp"
+            srcset="
+              ./img/about/right-mobile.webp    1x,
+              ./img/about/right-mobile@2x.webp 2x
+            "
+            alt="Close-up of floral embroidery on a white Ukrainian blouse"
+            width="335"
+            height="499"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+        <picture
+          class="photo-rotator__slide"
+          data-photo-slide
+          aria-hidden="true"
+        >
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ./img/about/left-wide.webp    1x,
+              ./img/about/left-wide@2x.webp 2x
+            "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/about/left-desktop.webp    1x,
+              ./img/about/left-desktop@2x.webp 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/about/left-tablet.webp    1x,
+              ./img/about/left-tablet@2x.webp 2x
+            "
+          />
+          <img
+            src="./img/about/left-mobile.webp"
+            srcset="
+              ./img/about/left-mobile.webp    1x,
+              ./img/about/left-mobile@2x.webp 2x
+            "
+            alt="Geometric Ukrainian embroidery and bronze bracelets on a white blouse"
+            width="335"
+            height="499"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+        <button
+          class="photo-rotator__toggle"
+          type="button"
+          aria-label="Pause photos"
+          title="Pause photos"
+          hidden
+        >
+          <span class="photo-rotator__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+      <picture class="about-us__ornament" aria-hidden="true">
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/icons/about-ornament.svg"
+        />
+        <img src="./img/icons/about-ornament-mobile.svg" alt="" />
+      </picture>
+    </div>
   </div>
 </section>
