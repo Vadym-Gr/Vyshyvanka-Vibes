@@ -85,7 +85,28 @@ export function initPhotoRotators() {
     Promise.all(
       allSlides.map(async slide => {
         try {
-          await slide.querySelector('img').decode();
+          const image = slide.querySelector('img');
+          // Hidden lazy photos may not have a source selected until a breakpoint
+          // reveals them. Calling decode() before load can reject permanently.
+          if (!image.complete || !image.currentSrc) {
+            await new Promise((resolve, reject) => {
+              const cleanup = () => {
+                image.removeEventListener('load', loaded);
+                image.removeEventListener('error', failed);
+              };
+              const loaded = () => {
+                cleanup();
+                resolve();
+              };
+              const failed = () => {
+                cleanup();
+                reject(new Error('Photo could not be loaded'));
+              };
+              image.addEventListener('load', loaded);
+              image.addEventListener('error', failed);
+            });
+          }
+          await image.decode();
           return slide;
         } catch {
           return null;

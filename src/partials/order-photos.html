@@ -1,0 +1,73 @@
+<div class="order__visual">
+  <div class="order__photo photo-rotator" data-photo-rotator>
+    <picture class="photo-rotator__slide is-active" data-photo-slide>
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ./img/order/right-wide.webp    1x,
+          ./img/order/right-wide@2x.webp 2x
+        "
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./img/order/right-desktop.webp    1x,
+          ./img/order/right-desktop@2x.webp 2x
+        "
+      />
+      <img
+        src="./img/order/right-tablet.webp"
+        srcset="
+          ./img/order/right-tablet.webp    1x,
+          ./img/order/right-tablet@2x.webp 2x
+        "
+        alt="Close-up of a cream Ukrainian blouse and vest with orange and dark floral embroidery"
+        width="704"
+        height="521"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+    <picture class="photo-rotator__slide" data-photo-slide aria-hidden="true">
+      <source
+        media="(min-width: 1440px)"
+        srcset="./img/order/left-wide.webp 1x, ./img/order/left-wide@2x.webp 2x"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./img/order/left-desktop.webp    1x,
+          ./img/order/left-desktop@2x.webp 2x
+        "
+      />
+      <img
+        src="./img/order/left-tablet.webp"
+        srcset="
+          ./img/order/left-tablet.webp    1x,
+          ./img/order/left-tablet@2x.webp 2x
+        "
+        alt="Woman in a white embroidered blouse sitting in grass in warm sunlight"
+        width="704"
+        height="521"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+    <button
+      class="photo-rotator__toggle"
+      type="button"
+      aria-label="Pause photos"
+      title="Pause photos"
+      hidden
+    >
+      <span class="photo-rotator__icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  <picture class="order__ornament" aria-hidden="true">
+    <source
+      media="(min-width: 1280px)"
+      srcset="./img/icons/order-ornament-wide.svg"
+    />
+    <img src="./img/icons/order-ornament-tablet.svg" alt="" />
+  </picture>
+</div>

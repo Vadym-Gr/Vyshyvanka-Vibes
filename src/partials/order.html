@@ -1,8 +1,92 @@
-<section class="section" id="customer-order" aria-labelledby="order-title">
-  <div class="container">
-    <h2 class="section-title" id="order-title">
-      <span class="text-accent">Your order</span> is our priority: Personalized
-      approach and quality of service
-    </h2>
+<section
+  class="section order"
+  id="customer-order"
+  aria-labelledby="order-title"
+>
+  <div class="container order__inner">
+    <div class="order__content">
+      <h2 class="section-title order__title" id="order-title">
+        <span class="text-accent">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form
+        class="order-form"
+        method="post"
+        aria-labelledby="order-title"
+        data-order-form
+      >
+        <div class="order-form__fields">
+          <div class="order-form__field">
+            <label class="visually-hidden" for="order-name"
+              >Full name (required)</label
+            >
+            <input
+              class="order-form__control"
+              id="order-name"
+              name="fullName"
+              type="text"
+              autocomplete="name"
+              placeholder="Enter your full name"
+              required
+              minlength="2"
+              maxlength="100"
+              aria-describedby="order-name-error"
+            />
+            <p class="order-form__error" id="order-name-error" hidden></p>
+          </div>
+          <div class="order-form__field">
+            <label class="visually-hidden" for="order-email"
+              >Email (required)</label
+            >
+            <input
+              class="order-form__control"
+              id="order-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="Enter your email"
+              required
+              maxlength="254"
+              aria-describedby="order-email-error"
+            />
+            <p class="order-form__error" id="order-email-error" hidden></p>
+          </div>
+          <div class="order-form__field">
+            <label class="visually-hidden" for="order-comments"
+              >Comments (optional, up to 1000 characters)</label
+            >
+            <textarea
+              class="order-form__control order-form__comments"
+              id="order-comments"
+              name="comments"
+              placeholder="Comments"
+              rows="6"
+              maxlength="1000"
+              aria-describedby="order-comments-error"
+            ></textarea>
+            <p class="order-form__error" id="order-comments-error" hidden></p>
+          </div>
+        </div>
+        <button class="order-form__submit" type="submit" disabled>
+          Send
+          <span class="order-form__arrow" aria-hidden="true"
+            ><img src="./img/icons/order-arrow.svg" alt=""
+          /></span>
+        </button>
+        <p
+          class="order-form__status"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        ></p>
+        <noscript
+          ><p class="order-form__notice">
+            Please enable JavaScript to check this form. The sending service is
+            not connected yet.
+          </p></noscript
+        >
+      </form>
+    </div>
+    <load src="partials/order-photos.html" />
   </div>
 </section>
