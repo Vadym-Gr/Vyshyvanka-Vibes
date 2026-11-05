@@ -1,0 +1,15 @@
+.photo-banner {
+  height: 500px;
+  margin-block: var(--section-padding);
+  border-radius: 0;
+}
+
+.photo-banner .photo-rotator__toggle {
+  color: var(--color-background);
+}
+
+@media (min-width: 768px) {
+  .photo-banner {
+    height: 776px;
+  }
+}
