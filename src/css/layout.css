@@ -22,10 +22,6 @@
   line-height: 1.375;
 }
 
-.page-header {
-  padding-top: 20px;
-}
-
 .brand-link {
   display: inline-flex;
   border-radius: var(--radius-small);

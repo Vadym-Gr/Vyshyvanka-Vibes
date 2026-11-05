@@ -17,6 +17,7 @@
   --container-width: 375px;
   --container-gutter: 20px;
   --section-padding: 40px;
+  --header-height: 93px;
 }
 
 @media (min-width: 768px) {
@@ -39,5 +40,6 @@
   :root {
     --container-width: 1440px;
     --container-gutter: 100px;
+    --header-height: 91px;
   }
 }

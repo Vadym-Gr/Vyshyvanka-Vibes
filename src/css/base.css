@@ -1,7 +1,7 @@
 html {
   background-color: var(--color-background);
   scroll-behavior: smooth;
-  scroll-padding-top: 24px;
+  scroll-padding-top: calc(var(--header-height) + 24px);
 }
 
 body {
@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   min-height: 100svh;
+  padding-top: var(--header-height);
   color: var(--color-text);
   background-color: var(--color-background);
   font-family: var(--font-family);
