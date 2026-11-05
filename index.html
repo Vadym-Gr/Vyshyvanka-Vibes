@@ -10,8 +10,8 @@
     />
     <meta name="theme-color" content="#1c2225" />
     <title>Vyshyvanka Vibes — Ukrainian Embroidery</title>
-    <script type="module" crossorigin src="/Vyshyvanka-Vibes/assets/index-C35GWTFN.js"></script>
-    <link rel="stylesheet" crossorigin href="/Vyshyvanka-Vibes/assets/index-CJX82pri.css">
+    <script type="module" crossorigin src="/Vyshyvanka-Vibes/assets/index-CciE80dL.js"></script>
+    <link rel="stylesheet" crossorigin href="/Vyshyvanka-Vibes/assets/index-B9Ya1bez.css">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -955,12 +955,154 @@
   </button>
 </div>
 
-      <section class="section" id="customer-order" aria-labelledby="order-title">
-  <div class="container">
-    <h2 class="section-title" id="order-title">
-      <span class="text-accent">Your order</span> is our priority: Personalized
-      approach and quality of service
-    </h2>
+      <section
+  class="section order"
+  id="customer-order"
+  aria-labelledby="order-title"
+>
+  <div class="container order__inner">
+    <div class="order__content">
+      <h2 class="section-title order__title" id="order-title">
+        <span class="text-accent">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form
+        class="order-form"
+        method="post"
+        aria-labelledby="order-title"
+        data-order-form
+      >
+        <div class="order-form__fields">
+          <div class="order-form__field">
+            <label class="visually-hidden" for="order-name"
+              >Full name (required)</label
+            >
+            <input
+              class="order-form__control"
+              id="order-name"
+              name="fullName"
+              type="text"
+              autocomplete="name"
+              placeholder="Enter your full name"
+              required
+              minlength="2"
+              maxlength="100"
+              aria-describedby="order-name-error"
+            />
+            <p class="order-form__error" id="order-name-error" hidden></p>
+          </div>
+          <div class="order-form__field">
+            <label class="visually-hidden" for="order-email"
+              >Email (required)</label
+            >
+            <input
+              class="order-form__control"
+              id="order-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="Enter your email"
+              required
+              maxlength="254"
+              aria-describedby="order-email-error"
+            />
+            <p class="order-form__error" id="order-email-error" hidden></p>
+          </div>
+          <div class="order-form__field">
+            <label class="visually-hidden" for="order-comments"
+              >Comments (optional, up to 1000 characters)</label
+            >
+            <textarea
+              class="order-form__control order-form__comments"
+              id="order-comments"
+              name="comments"
+              placeholder="Comments"
+              rows="6"
+              maxlength="1000"
+              aria-describedby="order-comments-error"
+            ></textarea>
+            <p class="order-form__error" id="order-comments-error" hidden></p>
+          </div>
+        </div>
+        <button class="order-form__submit" type="submit" disabled>
+          Send
+          <span class="order-form__arrow" aria-hidden="true"
+            ><img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='26'%20height='10'%20viewBox='0%200%2026%2010'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20id='&%23226;&%23134;&%23146;'%20d='M19.7254%2010C20.1012%209.08832%2020.4644%208.2906%2020.815%207.60684C21.1908%206.92308%2021.554%206.35328%2021.9046%205.89744H0V4.10256H21.9046C21.554%203.61823%2021.1908%203.03419%2020.815%202.35043C20.4644%201.66667%2020.1012%200.883191%2019.7254%200H21.0405C22.6185%202.07977%2024.2717%203.61823%2026%204.61538V5.38462C24.2717%206.35328%2022.6185%207.89174%2021.0405%2010H19.7254Z'%20fill='%23ECD979'/%3e%3c/svg%3e" alt=""
+          /></span>
+        </button>
+        <p
+          class="order-form__status"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        ></p>
+        <noscript
+          ><p class="order-form__notice">
+            Please enable JavaScript to check this form. The sending service is
+            not connected yet.
+          </p></noscript
+        >
+      </form>
+    </div>
+    <div class="order__visual">
+  <div class="order__photo photo-rotator" data-photo-rotator>
+    <picture class="photo-rotator__slide is-active" data-photo-slide>
+      <source
+        media="(min-width: 1440px)"
+        srcset="/Vyshyvanka-Vibes/assets/right-wide-DKDTKRp_.webp 1x, /Vyshyvanka-Vibes/assets/right-wide@2x-589KQyPG.webp 2x"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="/Vyshyvanka-Vibes/assets/right-desktop-BCCGPgj5.webp 1x, /Vyshyvanka-Vibes/assets/right-desktop@2x-Bz_jcnHf.webp 2x"
+      />
+      <img
+        src="/Vyshyvanka-Vibes/assets/right-tablet-CUFFxn9E.webp"
+        srcset="/Vyshyvanka-Vibes/assets/right-tablet-CUFFxn9E.webp 1x, /Vyshyvanka-Vibes/assets/right-tablet@2x-B_LpZM0P.webp 2x"
+        alt="Close-up of a cream Ukrainian blouse and vest with orange and dark floral embroidery"
+        width="704"
+        height="521"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+    <picture class="photo-rotator__slide" data-photo-slide aria-hidden="true">
+      <source
+        media="(min-width: 1440px)"
+        srcset="/Vyshyvanka-Vibes/assets/left-wide-CVsHUTfD.webp 1x, /Vyshyvanka-Vibes/assets/left-wide@2x-Dsk8oKms.webp 2x"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="/Vyshyvanka-Vibes/assets/left-desktop-DKV3gqyr.webp 1x, /Vyshyvanka-Vibes/assets/left-desktop@2x-D5HPEJxp.webp 2x"
+      />
+      <img
+        src="/Vyshyvanka-Vibes/assets/left-tablet-CNNLl49s.webp"
+        srcset="/Vyshyvanka-Vibes/assets/left-tablet-CNNLl49s.webp 1x, /Vyshyvanka-Vibes/assets/left-tablet@2x-CV09qx49.webp 2x"
+        alt="Woman in a white embroidered blouse sitting in grass in warm sunlight"
+        width="704"
+        height="521"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+    <button
+      class="photo-rotator__toggle"
+      type="button"
+      aria-label="Pause photos"
+      title="Pause photos"
+      hidden
+    >
+      <span class="photo-rotator__icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  <picture class="order__ornament" aria-hidden="true">
+    <source
+      media="(min-width: 1280px)"
+      srcset="/Vyshyvanka-Vibes/assets/order-ornament-wide-DLyLrZ4A.svg"
+    />
+    <img src="/Vyshyvanka-Vibes/assets/order-ornament-tablet-bp-fK6hm.svg" alt="" />
+  </picture>
+</div>
+
   </div>
 </section>
 
