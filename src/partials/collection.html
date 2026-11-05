@@ -1,5 +1,148 @@
-<section class="section" id="our-collection" aria-labelledby="collection-title">
+<section
+  class="section collection"
+  id="our-collection"
+  aria-labelledby="collection-title"
+>
   <div class="container">
-    <h2 class="section-title" id="collection-title">Our collection</h2>
+    <h2 class="section-title collection__title" id="collection-title">
+      Our collection
+    </h2>
+    <div class="collection__body">
+      <picture class="collection__ornament" aria-hidden="true">
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/icons/collection-ornament.svg"
+        />
+        <img src="./img/icons/collection-ornament-mobile.svg" alt="" />
+      </picture>
+      <div
+        class="carousel collection__carousel"
+        data-carousel
+        data-carousel-group-size="6"
+        data-carousel-item-name="products"
+        role="group"
+        aria-roledescription="carousel"
+        aria-label="Our collection"
+      >
+        <button
+          class="carousel__button carousel__previous"
+          type="button"
+          aria-label="Previous products"
+          aria-controls="collection-viewport"
+          hidden
+        >
+          <span aria-hidden="true">‹</span>
+        </button>
+        <div
+          class="carousel__viewport"
+          id="collection-viewport"
+          tabindex="0"
+          role="group"
+          aria-label="Products. Use left and right arrow keys to browse."
+        >
+          <ul class="carousel__track">
+            <load
+              src="partials/product-card.html"
+              product-id="01"
+              product-title="AUGUST Poltava women's blouseRING"
+              price="3300"
+              image-alt="Black women's blouse with colourful floral embroidery"
+            />
+            <load
+              src="partials/product-card.html"
+              product-id="02"
+              product-title="Women's blouse Gorgany"
+              price="3350"
+              image-alt="Beige women's blouse with red and black embroidery"
+            />
+            <load
+              src="partials/product-card.html"
+              product-id="03"
+              product-title="Women's blouse Crimea"
+              price="4000"
+              image-alt="White women's blouse with colourful floral embroidery"
+            />
+            <load
+              src="partials/product-card.html"
+              product-id="04"
+              product-title="Men's shirt Verkhovina"
+              price="3100"
+              image-alt="Beige men's shirt with brown geometric embroidery"
+            />
+            <load
+              src="partials/product-card.html"
+              product-id="05"
+              product-title="Mountain men's shirt"
+              price="3300"
+              image-alt="Black men's shirt with green geometric embroidery"
+            />
+            <load
+              src="partials/product-card.html"
+              product-id="06"
+              product-title="Men's shirt Yasen"
+              price="1700"
+              image-alt="White men's shirt with orange embroidery and tassels"
+            />
+            <load
+              src="partials/product-card.html"
+              product-id="07"
+              product-title="AUGUST Poltava women's blouseRING"
+              price="3300"
+              image-alt="White embroidered dress and matching bag hanging beside green leaves"
+            />
+            <load
+              src="partials/product-card.html"
+              product-id="08"
+              product-title="Women's blouse Gorgany"
+              price="3350"
+              image-alt="White blouse with red floral embroidery on a wooden hanger"
+            />
+            <load
+              src="partials/product-card.html"
+              product-id="09"
+              product-title="Women's blouse Crimea"
+              price="4000"
+              image-alt="White blouses with red embroidery on hangers"
+            />
+            <load
+              src="partials/product-card.html"
+              product-id="10"
+              product-title="Men's shirt Verkhovina"
+              price="3100"
+              image-alt="White men's shirt with red geometric embroidery and tassels"
+            />
+            <load
+              src="partials/product-card.html"
+              product-id="11"
+              product-title="Mountain men's shirt"
+              price="3300"
+              image-alt="White shirt with green geometric embroidery and leaves"
+            />
+            <load
+              src="partials/product-card.html"
+              product-id="12"
+              product-title="Men's shirt Yasen"
+              price="1700"
+              image-alt="White men's shirt with blue embroidery and tassels"
+            />
+          </ul>
+        </div>
+        <button
+          class="carousel__button carousel__next"
+          type="button"
+          aria-label="Next products"
+          aria-controls="collection-viewport"
+          hidden
+        >
+          <span aria-hidden="true">›</span>
+        </button>
+        <p
+          class="visually-hidden"
+          data-carousel-status
+          aria-live="polite"
+          aria-atomic="true"
+        ></p>
+      </div>
+    </div>
   </div>
 </section>

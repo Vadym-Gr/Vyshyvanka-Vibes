@@ -1,0 +1,105 @@
+.carousel {
+  --carousel-columns: 1;
+  --carousel-rows: 1;
+  --carousel-column-gap: 20px;
+  --carousel-row-gap: 40px;
+  --carousel-control-offset: -16px;
+
+  position: relative;
+  min-width: 0;
+}
+
+.carousel__viewport {
+  width: 100%;
+  min-width: 0;
+}
+
+.carousel__track {
+  display: grid;
+  grid-template-columns: repeat(var(--carousel-columns), minmax(0, 1fr));
+  gap: var(--carousel-row-gap) var(--carousel-column-gap);
+}
+
+.carousel[data-carousel-ready] .carousel__viewport {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carousel__viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel[data-carousel-ready] .carousel__track {
+  grid-template-columns: none;
+  grid-template-rows: repeat(var(--carousel-rows), auto);
+  grid-auto-columns: var(--carousel-item-width);
+}
+
+[data-carousel-item] {
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+.carousel__button {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0 0 4px;
+  transform: translateY(-50%);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 50%;
+  color: var(--color-accent);
+  background-color: rgb(28 34 37 / 85%);
+  font-size: 40px;
+  line-height: 1;
+  transition:
+    opacity var(--transition-duration) var(--transition-easing),
+    border-color var(--transition-duration) var(--transition-easing);
+}
+
+.carousel__button:hover:not(:disabled),
+.carousel__button:focus-visible {
+  border-color: var(--color-accent);
+}
+
+.carousel__button:disabled {
+  opacity: 0.3;
+}
+
+.carousel__button[hidden] {
+  display: none;
+}
+
+.carousel__previous {
+  left: var(--carousel-control-offset);
+}
+
+.carousel__next {
+  right: var(--carousel-control-offset);
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    --carousel-control-offset: -28px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .carousel {
+    --carousel-control-offset: -44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__button {
+    transition: none;
+  }
+}

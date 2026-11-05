@@ -1,0 +1,51 @@
+<li class="product-card" data-carousel-item data-product-id="{=$product-id}">
+  <article aria-labelledby="product-title-{=$product-id}">
+    <picture class="product-card__image">
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ./img/collection/product-{=$product-id}-wide.webp    1x,
+          ./img/collection/product-{=$product-id}-wide@2x.webp 2x
+        "
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./img/collection/product-{=$product-id}-desktop.webp    1x,
+          ./img/collection/product-{=$product-id}-desktop@2x.webp 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/collection/product-{=$product-id}-tablet.webp    1x,
+          ./img/collection/product-{=$product-id}-tablet@2x.webp 2x
+        "
+      />
+      <img
+        src="./img/collection/product-{=$product-id}-mobile.webp"
+        srcset="
+          ./img/collection/product-{=$product-id}-mobile.webp    1x,
+          ./img/collection/product-{=$product-id}-mobile@2x.webp 2x
+        "
+        alt="{=$image-alt}"
+        width="335"
+        height="400"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+    <div class="product-card__details">
+      <h3
+        class="product-card__title"
+        id="product-title-{=$product-id}"
+        title="{=$product-title}"
+      >
+        {=$product-title}
+      </h3>
+      <p class="product-card__price">
+        <data value="{=$price}">{=$price}</data> UAH
+      </p>
+    </div>
+  </article>
+</li>
