@@ -62,7 +62,6 @@
 }
 
 @media (min-width: 1280px) {
-  .page-title,
   .footer-tagline {
     font-size: 64px;
     line-height: 1.15625;

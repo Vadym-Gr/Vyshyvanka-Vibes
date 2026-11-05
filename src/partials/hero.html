@@ -1,8 +1,98 @@
-<section class="section" aria-labelledby="hero-title">
-  <div class="container">
-    <h1 class="page-title" id="hero-title">
-      Reviving the traditional
-      <span class="text-accent">Ukrainian</span> artistry in every stitch.
-    </h1>
+<section class="section hero" aria-labelledby="hero-title">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <h1 class="page-title hero__title" id="hero-title">
+        <span class="hero__opening">Reviving the</span> traditional
+        <span class="text-accent">Ukrainian</span> artistry in every stitch.
+      </h1>
+      <a class="hero__order" href="#customer-order" data-section-link>
+        Order
+        <span class="hero__arrow" aria-hidden="true">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="./img/icons/order-arrow-desktop.svg"
+            />
+            <img
+              src="./img/icons/order-arrow.svg"
+              alt=""
+              width="26"
+              height="10"
+            />
+          </picture>
+        </span>
+      </a>
+    </div>
+    <div class="hero__photo photo-rotator" data-photo-rotator>
+      <picture class="photo-rotator__slide is-active" data-photo-slide>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/hero/right-desktop.webp    1x,
+            ./img/hero/right-desktop@2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/hero/right-tablet.webp    1x,
+            ./img/hero/right-tablet@2x.webp 2x
+          "
+        />
+        <img
+          src="./img/hero/right-mobile.webp"
+          srcset="
+            ./img/hero/right-mobile.webp    1x,
+            ./img/hero/right-mobile@2x.webp 2x
+          "
+          alt="Woman wearing a grey Ukrainian shirt with colourful embroidery"
+          width="335"
+          height="545"
+          fetchpriority="high"
+        />
+      </picture>
+      <picture class="photo-rotator__slide" data-photo-slide aria-hidden="true">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/hero/left-desktop.webp    1x,
+            ./img/hero/left-desktop@2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/hero/left-tablet.webp    1x,
+            ./img/hero/left-tablet@2x.webp 2x
+          "
+        />
+        <img
+          src="./img/hero/left-mobile.webp"
+          srcset="
+            ./img/hero/left-mobile.webp    1x,
+            ./img/hero/left-mobile@2x.webp 2x
+          "
+          alt="Woman wearing a white embroidered Ukrainian blouse in a sunlit field"
+          width="335"
+          height="545"
+          decoding="async"
+        />
+      </picture>
+      <button
+        class="photo-rotator__toggle"
+        type="button"
+        aria-label="Pause photos"
+        title="Pause photos"
+        hidden
+      >
+        <span class="photo-rotator__icon" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="hero__handmade">
+      <span class="hero__star" aria-hidden="true">
+        <img src="./img/icons/handmade-star.svg" alt="" />
+      </span>
+      <p>all embroidery is made by hand</p>
+    </div>
   </div>
 </section>

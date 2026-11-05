@@ -112,8 +112,8 @@ export function initSectionNavigation() {
     queueUpdate();
   }
 
-  document.querySelector('.header-nav').addEventListener('click', event => {
-    const link = event.target.closest('.header-nav__link');
+  document.addEventListener('click', event => {
+    const link = event.target.closest('.header-nav__link, [data-section-link]');
     if (
       !link ||
       event.button !== 0 ||
