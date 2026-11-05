@@ -1,7 +1,14 @@
-.photo-banner {
-  height: 500px;
+.photo-banner__container {
   margin-block: var(--section-padding);
+}
+
+.photo-banner {
+  aspect-ratio: 375 / 500;
   border-radius: 0;
+}
+
+.photo-banner .photo-rotator__slide img {
+  object-fit: contain;
 }
 
 .photo-banner .photo-rotator__toggle {
@@ -10,6 +17,18 @@
 
 @media (min-width: 768px) {
   .photo-banner {
-    height: 776px;
+    aspect-ratio: 768 / 776;
+  }
+}
+
+@media (min-width: 1280px) {
+  .photo-banner {
+    aspect-ratio: 1280 / 776;
+  }
+}
+
+@media (min-width: 1440px) {
+  .photo-banner {
+    aspect-ratio: 1440 / 776;
   }
 }

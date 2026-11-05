@@ -1,89 +1,91 @@
-<div class="photo-banner photo-rotator" id="photo-banner" data-photo-rotator>
-  <picture class="photo-rotator__slide is-active" data-photo-slide>
-    <source
-      media="(min-width: 1440px)"
-      srcset="
-        ./img/banner/right-wide.webp       1440w,
-        ./img/banner/right-wide-large.webp 2160w
-      "
-      sizes="100vw"
-    />
-    <source
-      media="(min-width: 1280px)"
-      srcset="
-        ./img/banner/right-desktop.webp       1280w,
-        ./img/banner/right-desktop-large.webp 1920w
-      "
-      sizes="100vw"
-    />
-    <source
-      media="(min-width: 768px)"
-      srcset="
-        ./img/banner/right-tablet.webp        768w,
-        ./img/banner/right-tablet-large.webp 1536w
-      "
-      sizes="100vw"
-    />
-    <img
-      src="./img/banner/right-mobile.webp"
-      srcset="
-        ./img/banner/right-mobile.webp       375w,
-        ./img/banner/right-mobile-large.webp 750w
-      "
-      sizes="100vw"
-      alt="Woman wearing a green Ukrainian blouse with dark floral embroidery"
-      width="375"
-      height="500"
-      loading="lazy"
-      decoding="async"
-    />
-  </picture>
-  <picture class="photo-rotator__slide" data-photo-slide aria-hidden="true">
-    <source
-      media="(min-width: 1440px)"
-      srcset="
-        ./img/banner/left-wide.webp       1440w,
-        ./img/banner/left-wide-large.webp 2160w
-      "
-      sizes="100vw"
-    />
-    <source
-      media="(min-width: 1280px)"
-      srcset="
-        ./img/banner/left-desktop.webp       1280w,
-        ./img/banner/left-desktop-large.webp 1920w
-      "
-      sizes="100vw"
-    />
-    <source
-      media="(min-width: 768px)"
-      srcset="
-        ./img/banner/left-tablet.webp        768w,
-        ./img/banner/left-tablet-large.webp 1152w
-      "
-      sizes="100vw"
-    />
-    <img
-      src="./img/banner/left-mobile.webp"
-      srcset="
-        ./img/banner/left-mobile.webp       375w,
-        ./img/banner/left-mobile-large.webp 750w
-      "
-      sizes="100vw"
-      alt="Woman in a white embroidered blouse and woven skirt standing in a sunlit field"
-      width="375"
-      height="500"
-      loading="lazy"
-      decoding="async"
-    />
-  </picture>
-  <button
-    class="photo-rotator__toggle"
-    type="button"
-    aria-label="Pause photos"
-    title="Pause photos"
-    hidden
-  >
-    <span class="photo-rotator__icon" aria-hidden="true"></span>
-  </button>
+<div class="container photo-banner__container">
+  <div class="photo-banner photo-rotator" id="photo-banner" data-photo-rotator>
+    <picture class="photo-rotator__slide is-active" data-photo-slide>
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ./img/banner/right-wide.webp       1440w,
+          ./img/banner/right-wide-large.webp 2160w
+        "
+        sizes="(min-width: 1440px) 1240px, (min-width: 1280px) 1180px, (min-width: 768px) 704px, (min-width: 375px) 335px, calc(100vw - 40px)"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./img/banner/right-desktop.webp       1280w,
+          ./img/banner/right-desktop-large.webp 1920w
+        "
+        sizes="(min-width: 1440px) 1240px, (min-width: 1280px) 1180px, (min-width: 768px) 704px, (min-width: 375px) 335px, calc(100vw - 40px)"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/banner/right-tablet.webp        768w,
+          ./img/banner/right-tablet-large.webp 1536w
+        "
+        sizes="(min-width: 1440px) 1240px, (min-width: 1280px) 1180px, (min-width: 768px) 704px, (min-width: 375px) 335px, calc(100vw - 40px)"
+      />
+      <img
+        src="./img/banner/right-mobile.webp"
+        srcset="
+          ./img/banner/right-mobile.webp       375w,
+          ./img/banner/right-mobile-large.webp 750w
+        "
+        sizes="(min-width: 1440px) 1240px, (min-width: 1280px) 1180px, (min-width: 768px) 704px, (min-width: 375px) 335px, calc(100vw - 40px)"
+        alt="Woman wearing a green Ukrainian blouse with dark floral embroidery"
+        width="375"
+        height="500"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+    <picture class="photo-rotator__slide" data-photo-slide aria-hidden="true">
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ./img/banner/left-wide.webp       1440w,
+          ./img/banner/left-wide-large.webp 2160w
+        "
+        sizes="(min-width: 1440px) 1240px, (min-width: 1280px) 1180px, (min-width: 768px) 704px, (min-width: 375px) 335px, calc(100vw - 40px)"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./img/banner/left-desktop.webp       1280w,
+          ./img/banner/left-desktop-large.webp 1920w
+        "
+        sizes="(min-width: 1440px) 1240px, (min-width: 1280px) 1180px, (min-width: 768px) 704px, (min-width: 375px) 335px, calc(100vw - 40px)"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/banner/left-tablet.webp        768w,
+          ./img/banner/left-tablet-large.webp 1152w
+        "
+        sizes="(min-width: 1440px) 1240px, (min-width: 1280px) 1180px, (min-width: 768px) 704px, (min-width: 375px) 335px, calc(100vw - 40px)"
+      />
+      <img
+        src="./img/banner/left-mobile.webp"
+        srcset="
+          ./img/banner/left-mobile.webp       375w,
+          ./img/banner/left-mobile-large.webp 750w
+        "
+        sizes="(min-width: 1440px) 1240px, (min-width: 1280px) 1180px, (min-width: 768px) 704px, (min-width: 375px) 335px, calc(100vw - 40px)"
+        alt="Woman in a white embroidered blouse and woven skirt standing in a sunlit field"
+        width="375"
+        height="500"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+    <button
+      class="photo-rotator__toggle"
+      type="button"
+      aria-label="Pause photos"
+      title="Pause photos"
+      hidden
+    >
+      <span class="photo-rotator__icon" aria-hidden="true"></span>
+    </button>
+  </div>
 </div>
