@@ -32,18 +32,6 @@
   opacity: 0.8;
 }
 
-.page-footer {
-  margin-top: var(--section-padding);
-  padding-block: 40px;
-  border-top: 1px solid var(--color-border);
-}
-
-.footer-tagline {
-  max-width: 11em;
-  font-size: 44px;
-  line-height: 1.23;
-}
-
 @media (min-width: 768px) {
   .page-title {
     font-size: 54px;
@@ -53,18 +41,6 @@
   .section-title {
     font-size: 44px;
     line-height: 1.455;
-  }
-
-  .footer-tagline {
-    font-size: 54px;
-    line-height: 1.185;
-  }
-}
-
-@media (min-width: 1280px) {
-  .footer-tagline {
-    font-size: 64px;
-    line-height: 1.15625;
   }
 }
 

@@ -1,8 +1,43 @@
-<footer class="page-footer">
+<footer class="page-footer" id="page-footer">
   <div class="container">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul class="footer-nav__list">
+        <li>
+          <a class="footer-nav__link" href="#about-us" data-section-link
+            >About us</a
+          >
+        </li>
+        <li>
+          <a class="footer-nav__link" href="#our-collection" data-section-link
+            >Our collection</a
+          >
+        </li>
+        <li>
+          <a class="footer-nav__link" href="#customer-order" data-section-link
+            >Customer order</a
+          >
+        </li>
+        <li>
+          <a class="footer-nav__link" href="#testimonials" data-section-link
+            >Testimonials</a
+          >
+        </li>
+      </ul>
+    </nav>
     <p class="footer-tagline">
       A touch of <span class="text-accent">Ukrainian</span> culture in every
       embroidery
     </p>
   </div>
+  <picture class="footer__ornament" aria-hidden="true">
+    <source
+      media="(min-width: 1280px)"
+      srcset="./img/icons/footer-ornament-desktop.svg"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="./img/icons/footer-ornament-tablet.svg"
+    />
+    <img src="./img/icons/footer-ornament-mobile.svg" alt="" />
+  </picture>
 </footer>
